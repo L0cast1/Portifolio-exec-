@@ -1,0 +1,87 @@
+.Contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: black;
+    width: 100%;
+    height: 650px;
+    position: relative;
+  }
+  
+  .disponível {
+    display: flex; /* Escolhendo Flexbox */
+    align-items: center;
+    color: #6c6868;
+    padding: 50px;
+    padding-top: 100px;
+    max-width: 65ch;
+    line-height: 1.33;
+    font-size: 1.3rem;
+  
+    
+  }
+
+  .cont{
+    display: grid;
+    padding-top: 200px;
+    font-size: 2rem;
+    color: white;
+    
+    
+  }
+  .email {
+    padding-left: 100px;
+  }
+  .numero{
+    padding-left: 100px;
+  }
+
+  .insta{
+    padding-left: 100px;
+  }
+
+  .Contato::before{
+    content: "";
+    display: block;
+    width: 250px;
+    height: 240px;
+    background: url(./img/detalhe.svg) no-repeat center;
+    position: absolute;
+    left: 40px;
+    top: -125px;
+    background-size: 250px;
+    
+  
+    
+  }
+
+  .direitos{
+    color: #6c6868;
+   display: flex;
+   flex-direction: column;
+  }
+
+  .dire{
+    position: sticky;
+    margin-top: auto;
+    padding: 20px;
+  }
+
+  @media(max-width:800px){
+    .Contato::before{
+        width: 100px;
+        height: 90px;
+    background-size: 100px;
+    top: -43px;
+    }
+    .Contato{
+        grid-template-columns: 1fr;
+    }
+    .disponível{
+        font-size: 1rem;
+    }
+    .cont{
+        font-size: 1.5rem;
+        padding-top: 5px;
+        
+    }
+  }

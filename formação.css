@@ -1,0 +1,176 @@
+
+.formação{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-family:Arial, Helvetica, sans-serif;
+    max-width: 1500px;
+    padding: 100px;
+    margin: 0 auto;
+    gap: 100px;
+    position: relative;
+    background: rgb(43, 41, 41);
+}
+
+.formação::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 49.5%;
+    transform: translateX(-50%); /* Ajusta para o centro exato */;
+    width: 100vw;  /* Faz o fundo ocupar toda a largura da tela */
+    height: 100%;  /* A altura ocupa o elemento */
+    background: rgb(43, 41, 41); /* Cor de fundo */
+    z-index: -1;  /* Coloca o fundo atrás do conteúdo */
+}
+
+.formação-lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+.formation{
+    display: flex;
+    background: black;
+    flex: 1 ;
+    flex-direction: column;
+    margin: 5px;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 4px; 
+    max-height: 150px;
+    position: relative;
+   
+}
+
+.formação-texto {
+    font-size: 1.5rem;
+      line-height: 1.33;
+     margin-bottom: 60px;
+     margin-top: 50px;
+     max-width: 60ch;
+     color: #868484;
+    
+}
+
+.formação-lugar {
+    margin-top: 65px;
+    color: #757575 ;
+    font-weight: bold;
+}
+
+.formação-ideia{
+    color: white;
+    margin-top: 20px;
+}
+
+.formação-nivel{
+    color: #757575;
+}
+.formation::before{
+    content: "";
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#b6f829,#67dd0a);
+    position: absolute;
+    left: -4px;
+    top: 60px;
+    
+}
+
+.cursos{
+    display: flex; /* Usando flexbox */
+    justify-content: space-between;
+    margin-top: 50px; /* Espaçamento entre as caixas de formação e a seção de cursos */
+    padding: 20px;
+    text-align: left;
+    width: 100%; /* Garante que ocupe toda a largura */
+    flex-direction: column;
+    position: relative;
+}
+
+.cursos h2{
+    margin-bottom: 10px;
+    color: #757575;
+}
+
+.cursos p{
+    display: flex; /* Flexbox no p */
+    align-items: center; /* Alinha o conteúdo do p verticalmente */
+    margin: 0; /* Remove a margem do parágrafo */
+    color: white;
+    font-size: 1rem;
+      line-height: 1.33;
+}
+
+.cursos span{
+    margin-left: auto; 
+    color: #868484;
+    
+    
+}
+
+.cursos::before{
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url(./img/cursos.svg);
+    position: absolute;
+    left: -10px;
+}
+
+.cursos-idioma{
+    display: flex; /* Usando flexbox */
+    justify-content: space-between;
+    margin-top: 50px; /* Espaçamento entre as caixas de formação e a seção de cursos */
+    padding: 20px;
+    text-align: left;
+    width: 100%; /* Garante que ocupe toda a largura */
+    flex-direction: column;
+    position: relative;
+}
+
+.cursos-idioma h2{
+    margin-bottom: 10px;
+    color: #757575;
+}
+
+.cursos-idioma p{
+    display: flex; /* Flexbox no p */
+    align-items: center; /* Alinha o conteúdo do p verticalmente */
+    margin: 0; /* Remove a margem do parágrafo */
+    color: white;
+    font-size: 1rem;
+      line-height: 1.33;
+}
+
+.cursos-idioma span{
+    margin: 5px;
+    color: #868484;
+}
+
+.cursos-idioma::before{
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url(./img/idiomas.svg);
+    position: absolute;
+    left: -10px;
+}
+
+
+@media(max-width:800px){
+    .formação {
+        grid-template-columns: 1fr;
+        
+    }
+}
+
+
+
+
+
+
